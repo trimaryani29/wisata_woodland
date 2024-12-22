@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Beranda */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: orange;
+}
+
+.logo img {
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+    padding-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    color: orange;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/20.png') center/cover no-repeat;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.button {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+    width: 35%;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px; 
+    left: 270px; 
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; 
+    width: 35%;
+}
+
+.button-container{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    gap: 10px;
+    width: 35%;
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+    gap: 20px;     
+    width: 35%;   
+    padding: 20px;   
+}
+  
+.btn {
+    background-color: orange; 
+    color: white;            
+    border: none;            
+    padding: 10px 20px;      
+    font-size: 10px;         
+    cursor: pointer;         
+    border-radius:10px;      
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    width: 35%;
+}  
+
+.btn {
+    padding: 10px 20px;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 35%;
+}
+  
+.eksplor {
+    background-color: orange; 
+    color: black; 
+}
+  
+.eksplor:hover {
+    background-color: rgb(255, 255, 255); 
+}
+
+.paket {
+    background-color: gray; 
+    color: black; 
+}
+  
+.paket:hover {
+    background-color: rgb(255, 255, 255); 
+}
+
+.logo p {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+/* Tentang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+  
+.tentang-wisata {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+.tentang-wisata h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.tentang-wisata .highlight {
+    color: orange;
+}
+  
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+    position: relative;
+}
+  
+.featured {
+    flex: 2;
+    position: relative;
+}
+  
+.featured img {
+    width: 100%;
+    border-radius: 8px;
+}
+  
+.featured .info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    width: calc(100% - 40px);
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    height: 57vh;
+}
+  
+.featured .info h2 {
+    margin: 0;
+}
+  
+.featured .info ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.featured .info ul li {
+    margin: 5px 0;
+}
+  
+.featured .info .read-more {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.other-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+  
+.video-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.video-card {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.video-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video-card a {
+    font-size: 18px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.video-card a:hover {
+    text-decoration: underline;
+}
+
+.video-card p {
+    margin: 5px 0 0 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Destinasi Wisata */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+  
+.container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 650px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #000;
+    padding-left: 80px;
+    text-align: left;
+}
+
+h2.woodland {
+    font-size: 28px;
+    color: orange;
+    margin-bottom: 30px;
+    padding-left: 80px;
+    text-align: left;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    border-radius: 10px;
+}
+  
+.card img {
+    width: 100%; 
+    border-radius: 8px;
+}
+  
+.card h3 {
+    margin: 10px;
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+}
+  
+.card p {
+    margin: 0 10px 15px;
+    font-size: 14px;
+    color: #555;
+}
+  
+.info {
+    position: absolute;
+    bottom: 0px; 
+    left: 20px; 
+    top: 85%; 
+    width: calc(100% - 40px); 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    height: 25vh;
+}
+  
+.card .info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+}
+  
+.card .info p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Paket Wahana */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+.wahana-packages {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 650px;
+}
+  
+.title {
+    text-align: left;
+    font-size: 2.5em;
+    padding-left: 20px;
+    margin-left: 0;
+    padding: 10px;
+}
+  
+.title .highlight {
+    color: orange;
+}
+  
+.packages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.package {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 32%;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+.package img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+.package h2 {
+    color: orange;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+  
+.package ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 1em;
+}
+  
+.package ul li {
+    margin: 5px 0;
+}
+
+/* Kontak */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+  
+.footer {
+    background-color: #ff5b00;
+    color: white;
+    padding: 20px 40px;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+.left-section {
+    max-width: 60%;
+}
+  
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.tagline {
+    margin: 5px 0;
+    font-size: 16px;
+}
+  
+.description {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+  
+.right-section {
+    text-align: left;
+}
+  
+.update-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.email-input {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+  
+.submit-button {
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.submit-button:hover {
+    background-color: #333;
+}
+  
+.footer-bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+  
