@@ -48,7 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (tambahPesanan($nama, $no_hp, $tanggal, $paket, $jumlah, $harga, $total_harga)) {
             echo "Pesanan berhasil disimpan.";
             // Redirect ke halaman sukses atau lainnya
-            header("Location: daftar_pesanan.php");
+            $id_pemesanan = mysqli_insert_id($conn);
+            header('Location: invoice.php?id='.$id_pemesanan);
             exit();
         } else {
             echo "Gagal menyimpan pesanan.";
