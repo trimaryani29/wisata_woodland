@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $jumlah = (int) trim($_POST['jumlah']);
     $harga = (int) str_replace(['Rp ', '.'], '', $_POST['harga']); // Bersihkan format Rp dan titik
     $total_harga = (int) str_replace(['Rp ', '.'], '', $_POST['total_harga']); // Bersihkan format Rp dan titik
-
+    
     // Validasi data
     if (!empty($nama) && !empty($no_hp) && !empty($tanggal) && !empty($paket) && $jumlah > 0 && $harga > 0 && $total_harga > 0) {
         // Tambahkan data ke database

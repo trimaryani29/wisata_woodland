@@ -64,8 +64,6 @@
 
         <label for="total_harga">Total Harga: <p>Rp. <?= number_format($detail[7], 0 , ',', '.')?></p></label>
 
-        <label for="created_at">Tanggal Pemesanan: <p><?= $detail[8]?></p></label>
-
         <button type="submit" onclick="window.print()">Cetak Invoice</button>
     </form>
     </div><?php } ?>
@@ -91,6 +89,7 @@
         const jumlahInput = document.getElementById("jumlah");
         const hargaInput = document.getElementById("harga");
         const totalHargaInput = document.getElementById("total_harga");
+
 
         const tanggalValue = tanggalInput.value;
         let hari = null;
