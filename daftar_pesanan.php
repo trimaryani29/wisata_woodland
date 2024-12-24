@@ -18,6 +18,7 @@
                 <th>Jumlah</th>
                 <th>Harga</th>
                 <th>Total Harga</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -42,6 +43,10 @@
                         <td>{$row['jumlah']}</td>
                         <td>Rp " . number_format($row['harga'], 0, ',', '.') . "</td>
                         <td>Rp " . number_format($row['total_harga'], 0, ',', '.') . "</td>
+                        <td>
+                        <a href='invoice.php?id={$row['id']}'>Invoice</a>
+                        <a href=''>Hapus</a>
+                        </td>
                     </tr>";
                 }
             } else {
@@ -49,6 +54,7 @@
             }
             ?>
         </tbody>
+        <a href=""></a>
     </table>
 </body>
 </html>

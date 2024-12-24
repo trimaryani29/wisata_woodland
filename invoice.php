@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href='index.php' class="active">Beranda</a></li>
-                <li><a href="#pemesanan">Pemesanan</a></li>
+                <li><a href="pesan.php">Pemesanan</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>

@@ -20,6 +20,7 @@
                 <li><a href="#tentang">Tentang</a></li>
                 <li><a href="#destinasi">Destinasi</a></li>
                 <li><a href="#paket">Paket Wisata</a></li>
+                <li><a href="daftar_pesanan.php">Daftar Pesanan</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
