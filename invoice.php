@@ -48,7 +48,7 @@
     <!--- Form Pemesanan --->
     <div id="pemesanan" class="container" style="height: 100%;">
         <h2>Invoice Pemesanan #<?= $detail[0]?></h2>
-    <form id="formPemesanan" action="proses.php" method="POST">
+    <form id="formPemesanan">
         <label for="nama">Nama: <p><?= $detail[1]?></p></label>
 
         <label for="no_hp">Nomor HP: <p><?= $detail[2]?></p></label>
